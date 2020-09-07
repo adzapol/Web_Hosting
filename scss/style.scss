@@ -1,0 +1,215 @@
+@import 'scss/normalize.scss';
+
+// === Mixins ===
+@mixin font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin font-nunito {
+    font-family: 'Nunito', sans-serif;
+}
+// === / Mixins ===
+
+// === Variables ===
+$color-white: #ffffff;
+$color-button: #93A5FF;
+$color-input: #384170;
+// === / Variables ===
+
+// === Common ===
+body {
+    @include font-roboto;
+    @include font-nunito;
+}
+
+.section-outer {}
+.section-inner {
+    width: 1639px;
+    margin: 0 auto;
+}
+a {
+    color: $color-white;
+    text-decoration: none;
+}
+
+button {
+    @include font-nunito;
+    
+    color: $color-white;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+input {
+    @include font-nunito;
+
+    color: $color-white;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+// === / Common ===
+
+// === header ===
+.section-header {
+    color: $color-white;
+    background: url('../svg/Group\ 138.svg') no-repeat 50% 50%;
+    background-size: cover;
+    
+    .section-inner {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;        
+    }
+    
+    &-nav {
+        display: flex;
+        
+        &-logo {
+            width: 120px;
+            font-weight: bold;
+            font-size: 20px;
+            padding-top: 50px;
+        }
+        &-menu {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 826px;
+            padding-left: 720px;           
+            
+            &-items {
+                display: inline-flex;
+                width: 110px;
+                font-size: 20px;
+                line-height: 27px;
+                padding-top: 50px;
+                justify-content: center;
+                border-radius: 0 0 5px 5px;
+            }
+
+            &-items:first-child {
+                background-color: $color-button;
+            }
+
+            &-items:nth-child(4) {
+                width: 180px;
+            }
+            &-button {
+                width: 123px;
+                height: 54px;
+                font-weight: bold;
+                font-size: 20px;
+                color: $color-button;
+                border-radius: 5px;
+                background-color: $color-white;
+            }
+        }  
+    }
+    &-content {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: space-between;
+    }  
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+                
+        &__title {
+            @include font-roboto;
+            font-weight: bold;
+            font-size: 49px;
+            line-height: 64px;
+            padding-bottom: 14px;
+            }
+
+        &__subtitle {
+            font-size: 28px;
+            line-height: 38px;
+            padding-bottom: 43.5px; 
+        }
+
+        &__form {
+            display: flex;
+            width: 722px;
+            
+            &-input-one {
+                input {
+                    width: 346px;
+                    font-size: 20px;
+                    line-height: 27px;
+                    padding: 16px 17px;
+                    border-radius: 5px;
+                    background-color: $color-input;
+                    margin-right: 1px;
+
+                    &::placeholder {
+                        color: $color-white;
+                    }
+                }
+            }
+
+            &-input-two {
+                input {
+                    width: 123px;
+                    font-size: 20px;
+                    line-height: 27px;
+                    padding: 16px 17px;
+                    border-radius: 5px;
+                    background-color: $color-input;
+
+                    &::placeholder {
+                        color: $color-white;
+                    }
+                    &::-webkit-calendar-picker-indicator {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &-button {
+                button {
+                    width: 222px;
+                    font-size: 18px;
+                    line-height: 27px;
+                    background-color: $color-button;
+                    padding: 16px 17px;
+                    border-radius: 5px;
+                    margin-left: 31px;
+                }
+            }
+        }
+    }
+    &-picture {
+    }
+}
+// === / header ===
+
+// === why-us ===
+.section-why-us {}
+// === / why-us ===
+
+// === support ===
+.section-support {}
+// === / support ===
+
+// === services ===
+.section-services {}
+// === / services ===
+
+// === testimonials ===
+.section-testimonials {}
+// === / testimonials ===
+
+// === clients ===
+.section-clients {}
+// === / clients ===
+
+// === footer ===
+.section-footer {}
+// === / footer ===

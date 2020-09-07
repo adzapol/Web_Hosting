@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1995.19" height="897.351" viewBox="0 0 1995.19 897.351">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8c9efc;
+        opacity: 0.81;
+      }
+
+      .cls-2 {
+        fill: #424d83;
+      }
+
+      .cls-3 {
+        filter: url(#Path_14);
+      }
+    </style>
+    <filter id="Path_14" x="0" y="0" width="1995.19" height="897.351" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-color="#424d83" flood-opacity="0.271"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_138" data-name="Group 138" transform="translate(0 0)">
+    <path id="Path_91" data-name="Path 91" class="cls-1" d="M-3.067,1691.066c131.476-9.63,1758.533-122.625,1920.074-132.584,0-25.541-.005-719.492-.005-719.492L-3.067,839Z" transform="translate(3.067 -839)"/>
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -37.53, -34.55)">
+      <path id="Path_14-2" data-name="Path 14" class="cls-2" d="M1916.912,1689.906C1784.854,1680.872,158.295,1568.87-3.246,1558.911c0-25.864-.032-691.356-.032-691.356l1920.154.047S1916.912,1659.934,1916.912,1689.906Z" transform="translate(40.78 -833.06)"/>
+    </g>
+  </g>
+</svg>
