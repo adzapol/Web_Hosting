@@ -422,3 +422,7 @@ input {
         padding: 16px 17px;
         border-radius: 5px;
         margin-left: 31px; }
+
+.section-why-us {
+  background-color: blue;
+  color: red; }
