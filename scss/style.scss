@@ -14,9 +14,18 @@
 $color-white: #ffffff;
 $color-button: #93A5FF;
 $color-input: #384170;
+$color-p: #2E2E2E;
+$color-block: #F7F8FF;
+$color-content: #424D83;
+
+$opasity: 0.8;
 // === / Variables ===
 
 // === Common ===
+* {
+    box-sizing: border-box;
+}
+
 body {
     @include font-roboto;
     @include font-nunito;
@@ -77,10 +86,11 @@ input {
         }
         &-menu {
             display: flex;
+            flex-grow: 1;
             align-items: flex-end;
             justify-content: space-between;
             width: 826px;
-            padding-left: 720px;           
+            padding-left: 720px;          
             
             &-items {
                 display: inline-flex;
@@ -192,13 +202,119 @@ input {
 
 // === why-us ===
 .section-why-us {
-    background-color: blue;
-    color: red;
+
+    &-title {
+        text-align: center;
+        h1 {
+            font-size: 35px;
+            margin: 81px auto 0 auto;
+        }
+        p {
+            font-size: 28px;
+            opacity: $opasity;
+        }
+    }
+
+    &-content {
+        display: flex;
+        &-main,
+        &-picture {
+            flex-basis: 50%;
+        }
+
+        &-main {
+            margin-bottom: 106px;
+            &-post {
+                padding-right: 109px;
+                padding-bottom: 60px;
+                position: relative;
+                h1 {
+                    font-size: 23px;
+                    padding-left: 100px;
+                }
+                p {
+                    font-size: 23px;
+                    padding-left: 100px;
+                    color: $color-p;
+                    opacity: $opasity;
+                }
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+        &-picture {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
 }
 // === / why-us ===
 
 // === support ===
-.section-support {}
+.section-support {
+    background-color: $color-block;
+
+    &-title {
+        display: flex;
+        flex-direction: column;
+        
+        &__header {
+            padding-top: 100px;
+            font-size: 35px;
+            font-weight: bold;
+            line-height: 47px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        &__subtitle {
+            font-size: 28px;
+            line-height: 38px;
+            opacity: $opasity;
+            margin: 0 auto;
+        }
+    }
+
+    &-content {
+        background-color: black;
+        display: flex;
+        margin-top: 80px;
+        padding-bottom: 110px;
+
+        &-block {
+            flex-basis: 50%;
+
+            &-head {
+                display: flex;
+                justify-content: space-between;
+
+                &__icon {
+                    margin: 46px auto auto 50px;
+                }
+                &__picture {
+                    margin: 35px 19px auto auto;
+                }
+            }
+            
+            &__title {}
+            &__subtitle {}
+            &__button {}
+        }
+
+        &-block:nth-child(1) {
+            background-color: $color-button;
+            margin-right: 106px;
+        }
+
+        &-block:nth-child(2) {
+            background-color: $color-content;
+        }
+    }
+}
 // === / support ===
 
 // === services ===

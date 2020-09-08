@@ -303,6 +303,9 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-family: 'Nunito', sans-serif; }
@@ -348,6 +351,7 @@ input {
       padding-top: 50px; }
     .section-header-nav-menu {
       display: flex;
+      flex-grow: 1;
       align-items: flex-end;
       justify-content: space-between;
       width: 826px;
@@ -423,6 +427,74 @@ input {
         border-radius: 5px;
         margin-left: 31px; }
 
-.section-why-us {
-  background-color: blue;
-  color: red; }
+.section-why-us-title {
+  text-align: center; }
+  .section-why-us-title h1 {
+    font-size: 35px;
+    margin: 81px auto 0 auto; }
+  .section-why-us-title p {
+    font-size: 28px;
+    opacity: 0.8; }
+
+.section-why-us-content {
+  display: flex; }
+  .section-why-us-content-main, .section-why-us-content-picture {
+    flex-basis: 50%; }
+  .section-why-us-content-main {
+    margin-bottom: 106px; }
+    .section-why-us-content-main-post {
+      padding-right: 109px;
+      padding-bottom: 60px;
+      position: relative; }
+      .section-why-us-content-main-post h1 {
+        font-size: 23px;
+        padding-left: 100px; }
+      .section-why-us-content-main-post p {
+        font-size: 23px;
+        padding-left: 100px;
+        color: #2E2E2E;
+        opacity: 0.8; }
+      .section-why-us-content-main-post img {
+        position: absolute;
+        left: 0;
+        top: 0; }
+  .section-why-us-content-picture img {
+    width: 100%;
+    height: auto; }
+
+.section-support {
+  background-color: #F7F8FF; }
+  .section-support-title {
+    display: flex;
+    flex-direction: column; }
+    .section-support-title__header {
+      padding-top: 100px;
+      font-size: 35px;
+      font-weight: bold;
+      line-height: 47px;
+      margin: 0 auto;
+      margin-bottom: 10px; }
+    .section-support-title__subtitle {
+      font-size: 28px;
+      line-height: 38px;
+      opacity: 0.8;
+      margin: 0 auto; }
+  .section-support-content {
+    background-color: black;
+    display: flex;
+    margin-top: 80px;
+    padding-bottom: 110px; }
+    .section-support-content-block {
+      flex-basis: 50%; }
+      .section-support-content-block-head {
+        display: flex;
+        justify-content: space-between; }
+        .section-support-content-block-head__icon {
+          margin: 46px auto auto 50px; }
+        .section-support-content-block-head__picture {
+          margin: 35px 19px auto auto; }
+    .section-support-content-block:nth-child(1) {
+      background-color: #93A5FF;
+      margin-right: 106px; }
+    .section-support-content-block:nth-child(2) {
+      background-color: #424D83; }
