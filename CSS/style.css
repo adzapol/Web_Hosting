@@ -480,19 +480,67 @@ input {
       opacity: 0.8;
       margin: 0 auto; }
   .section-support-content {
-    background-color: black;
     display: flex;
     margin-top: 80px;
     padding-bottom: 110px; }
     .section-support-content-block {
-      flex-basis: 50%; }
+      display: flex;
+      flex-direction: column;
+      flex-basis: 50%;
+      border-radius: 5px; }
       .section-support-content-block-head {
         display: flex;
         justify-content: space-between; }
         .section-support-content-block-head__icon {
-          margin: 46px auto auto 50px; }
-        .section-support-content-block-head__picture {
+          display: flex;
+          width: 77px;
+          height: 77px;
+          margin: 46px auto auto 50px;
+          background-color: #424D83;
+          border-radius: 5px; }
+          .section-support-content-block-head__icon img {
+            margin: auto; }
+        .section-support-content-block-head__icon-two {
+          display: flex;
+          width: 77px;
+          height: 77px;
+          margin: 50px auto auto 50px;
+          background-color: #93A5FF;
+          border-radius: 5px; }
+          .section-support-content-block-head__icon-two img {
+            margin: auto; }
+        .section-support-content-block-head__picture-1 {
           margin: 35px 19px auto auto; }
+        .section-support-content-block-head__picture-2 {
+          margin: 0; }
+      .section-support-content-block__title {
+        font-size: 23px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-left: 50px;
+        margin-bottom: 24px;
+        margin-top: 43px; }
+      .section-support-content-block__subtitle {
+        width: 87%;
+        font-size: 20px;
+        color: #ffffff;
+        margin-left: 50px;
+        margin-bottom: 20px; }
+      .section-support-content-block__button {
+        display: flex;
+        flex-direction: row-reverse; }
+        .section-support-content-block__button button {
+          width: 180px;
+          height: 54px;
+          background-color: #ffffff;
+          border-radius: 5px;
+          color: #93A5FF;
+          font-size: 18px;
+          font-weight: bold;
+          margin-right: 50px;
+          margin-bottom: 44px; }
+          .section-support-content-block__button button img {
+            margin-left: 15px; }
     .section-support-content-block:nth-child(1) {
       background-color: #93A5FF;
       margin-right: 106px; }
