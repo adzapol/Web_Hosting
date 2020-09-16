@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -610,3 +611,118 @@ input {
         .section-services-main-post button a img {
           margin: 0;
           padding-left: 18px; }
+
+.section-testimonials {
+  background-color: #F7F8FF; }
+  .section-testimonials-title {
+    display: flex;
+    flex-direction: column; }
+    .section-testimonials-title__header {
+      padding-top: 100px;
+      font-size: 35px;
+      font-weight: bold;
+      line-height: 47px;
+      margin: 0 auto;
+      margin-bottom: 10px; }
+    .section-testimonials-title__subtitle {
+      font-size: 28px;
+      line-height: 38px;
+      opacity: 0.8;
+      margin: 0 auto; }
+  .section-testimonials-slider {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-bottom: 90px; }
+    .section-testimonials-slider-wrapper {
+      display: flex;
+      min-width: 0;
+      position: relative;
+      padding: 0 50px;
+      flex-direction: column; }
+      .section-testimonials-slider-wrapper-item {
+        display: flex;
+        min-width: 0;
+        margin: 0 50px; }
+        .section-testimonials-slider-wrapper-item img {
+          width: 108px;
+          height: 108px; }
+        .section-testimonials-slider-wrapper-item__title {
+          align-self: flex-start; }
+          .section-testimonials-slider-wrapper-item__title img {
+            width: 135px;
+            height: 18.5px;
+            margin-top: 20px; }
+          .section-testimonials-slider-wrapper-item__title p {
+            font-style: italic;
+            font-size: 23px;
+            color: #2E2E2E; }
+          .section-testimonials-slider-wrapper-item__title span {
+            font-weight: bold;
+            font-size: 20px;
+            color: #2E2E2E; }
+    .section-testimonials-slider-button {
+      margin: 0 auto; }
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden; }
+
+/* Лента слайдов */
+.slick-track {
+  display: flex; }
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+.section-testimonials-slider-wrapper .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 52px;
+  height: 54px;
+  margin-top: -30px; }
+
+/* Стрелка влево */
+.section-testimonials-slider-wrapper .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../svg/left_btn.png") 0 0/100% no-repeat; }
+
+/* Стрелка вправо */
+.section-testimonials-slider-wrapper .slick-arrow.slick-next {
+  right: 0;
+  background: url("/svg/right_btn.png") 0 0/100% no-repeat; }
+
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+.section-testimonials-slider-wrapper .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.section-testimonials-slider-wrapper .slick-dots li {
+  list-style: none;
+  padding: 0 10px; }
+
+.section-testimonials-slider-wrapper .slick-dots li.slick-active button {
+  opacity: 100%;
+  width: 20px;
+  height: 20px;
+  box-shadow: 1px 1px 5px 0 #d4d4d4, -1px -1px 5px 0 #d4d4d4; }
+
+.section-testimonials-slider-wrapper .slick-dots li button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #93A5FF;
+  border-radius: 50%;
+  opacity: 38%; }
