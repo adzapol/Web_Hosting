@@ -612,15 +612,120 @@ input {
     border-radius: 50%;
     opacity: 38%;
 }
-
-
-
 // === / testimonials ===
 
 // === clients ===
-.section-clients {}
+.section-clients {
+    &-title {
+        display: flex;
+        flex-direction: column;
+        &__header {
+            padding-top: 100px;
+            font-size: 35px;
+            font-weight: bold;
+            line-height: 47px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        &__subtitle {
+            font-size: 28px;
+            line-height: 38px;
+            opacity: $opasity;
+            margin: 0 auto;
+        }
+    }
+    &-partners {
+        margin-top: 80px;
+        margin-bottom: 70px;
+        img {
+            margin-left: 148px;
+            width: 10%;
+        }
+    }
+    &-button {
+        margin: 0 auto 116px auto;
+        text-align: center;
+        a {
+            width: 177px;
+            font-size: 18px;
+            line-height: 27px;
+            background-color: $color-button;
+            padding: 16px 17px;
+            border-radius: 5px;
+        }
+    }
+}
 // === / clients ===
 
 // === footer ===
-.section-footer {}
+.section-footer {
+    background: url('../svg/footer_bg.svg') no-repeat;
+    background-size: cover;
+    h2 {
+        color: $color-white;
+        font-size: 23px;
+    }
+    span, p {
+        color: $color-white;
+        font-size: 20px;
+    }
+    &-main {
+        display: flex;
+        padding-top: 200px;
+        justify-content: space-between;
+        &-content {
+            display: flex;
+            flex-basis: 60%;
+            justify-content: space-between;
+           &__coll {
+                flex-basis: 22%;
+                h2 {}
+                span {
+                    line-height: 45px;
+                }
+           }
+        }
+        &-contanier {
+            flex-basis: 30%;
+            &__cards {
+                img {}
+            }
+        } 
+    }
+    &-contact {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 94px;
+        &-local {
+            &__logo {
+                display: flex;
+                align-content: center;
+                font-size: 20;
+                font-weight: bold;
+                img {
+                    margin-right: 5px;
+                }
+            }
+            p {
+                line-height: 25px;
+                margin-top: 15px;
+            }
+        }
+        &-social {
+            text-align: right;
+            &-subtitle {
+                margin-top: 24px;
+                display: flex;
+                &__line {
+                    border: 1px solid $color-white;
+                    margin: 0 20px 0 20px;
+                    padding: 0;
+                }
+                p {
+                    line-height: 0px;
+                }
+            }
+        }
+    }
+}
 // === / footer ===
