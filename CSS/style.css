@@ -311,8 +311,12 @@ body {
   font-family: 'Roboto', sans-serif;
   font-family: 'Nunito', sans-serif; }
 
+.section-outer {
+  padding-left: 20px;
+  padding-right: 20px; }
+
 .section-inner {
-  width: 1639px;
+  max-width: 1639px;
   margin: 0 auto; }
 
 a {
@@ -344,19 +348,18 @@ input {
     flex-direction: column;
     height: 100vh; }
   .section-header-nav {
-    display: flex; }
+    display: flex;
+    justify-content: space-between; }
     .section-header-nav-logo {
-      width: 120px;
-      font-weight: bold;
-      font-size: 20px;
-      padding-top: 50px; }
+      padding-top: 50px;
+      min-width: 98px; }
+      .section-header-nav-logo span {
+        font-weight: bold;
+        font-size: 20px; }
     .section-header-nav-menu {
       display: flex;
-      flex-grow: 1;
       align-items: flex-end;
-      justify-content: space-between;
-      width: 826px;
-      padding-left: 720px; }
+      justify-content: space-between; }
       .section-header-nav-menu-items {
         display: inline-flex;
         width: 110px;
@@ -365,10 +368,13 @@ input {
         padding-top: 50px;
         justify-content: center;
         border-radius: 0 0 5px 5px; }
+      .section-header-nav-menu-items:not(first-child) {
+        margin-left: 40px; }
       .section-header-nav-menu-items:first-child {
         background-color: #93A5FF; }
       .section-header-nav-menu-items:nth-child(4) {
-        width: 180px; }
+        width: 180px;
+        margin-right: 50px; }
       .section-header-nav-menu-button {
         width: 123px;
         height: 54px;
@@ -377,6 +383,11 @@ input {
         color: #93A5FF;
         border-radius: 5px;
         background-color: #ffffff; }
+    @media (max-width: 1199px) {
+      .section-header-nav-menu-items:not(first-child) {
+        margin-left: 10px; }
+      .section-header-nav-menu-items:nth-child(4) {
+        margin-right: 10px; } }
   .section-header-content {
     display: flex;
     flex-grow: 1;
@@ -427,6 +438,10 @@ input {
         padding: 16px 17px;
         border-radius: 5px;
         margin-left: 31px; }
+  @media (max-width: 1200px) {
+    .section-header-content {
+      flex-direction: column;
+      justify-content: center; } }
 
 .section-why-us-title {
   text-align: center; }
@@ -760,6 +775,10 @@ input {
     background-color: #93A5FF;
     padding: 16px 17px;
     border-radius: 5px; }
+
+@media (max-width: 1199px) {
+  .section-clients-partners img {
+    margin-left: 30px; } }
 
 .section-footer {
   background: url("../svg/footer_bg.svg") no-repeat;
